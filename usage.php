@@ -7,6 +7,7 @@ error_reporting(E_ALL);
    include_once "TogglApiClass.php";
   	$togglObj = new TogglApiClass($api_token);
   	
+  	//Change the API Call Here you want to test
   	$apiCall = 'get_report';
   	
    switch($apiCall) {
@@ -165,6 +166,4 @@ error_reporting(E_ALL);
   	$a = json_decode($togglObj->response, true);
   	echo '<pre>';
   	print_r($a);
-  	echo '</pre>';  	
-
-//Time Entries
+  	echo '</pre>';

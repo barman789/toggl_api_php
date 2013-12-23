@@ -377,7 +377,6 @@ Class TogglApiClass{
         $url .= '?workspace_id=' . $workspace_id;
         $url .= '&' . $query_string;
         
-        echo $url;
         $this->_callAPI($url);
  }
   
